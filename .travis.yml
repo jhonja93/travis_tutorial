@@ -4,4 +4,5 @@ python:
 
 before_install: "pip install -r requeriments.txt"
 
-script: "python manage.py test"
+script: 
+  - "coverage run --source=ingreso_pacientes manage.py test ingreso_pacientes"
